@@ -1,7 +1,7 @@
 <template>
   <div class='container'>
       <div>
-          视频
+          问答
       </div>
   </div>
 </template>
