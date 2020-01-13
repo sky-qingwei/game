@@ -7,7 +7,7 @@ import store from '@/store'
 // next(flase)  终止当前跳转
 // next(地址)   跳转到另外一个地址
 // next()  放行
-router.beforEach(function (to, from, next) {
+router.beforeEach(function (to, from, next) {
   if (to.path.startsWith('/user') && !store.state.user.token) {
     // 表示以/user为开头的
     // 拦截 判断有无token 有token => 有token =放行  没有token=>登录
